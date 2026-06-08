@@ -12,7 +12,7 @@
   const tooltip = createTooltip();
 
   // ── Load data (cache handled by scatterplot) ─
-  d3.csv("demographics_age.csv").then(function (rawData) {
+  d3.csv("data/demographics_age.csv").then(function (rawData) {
     rawData.forEach(d => {
       d.year             = +d.year;
       d.hospitalisations = +d.hospitalisations;
